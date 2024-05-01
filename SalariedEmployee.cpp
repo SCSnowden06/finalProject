@@ -1,8 +1,8 @@
 #include "SalariedEmployee.h"
 #include <iostream>
 
-SalariedEmployee::SalariedEmployee(const std::string& name, int id, const std::string& jobTitle, double annualSalary)
-    : Employee(name, id, jobTitle), annualSalary(annualSalary) {}
+SalariedEmployee::SalariedEmployee(const std::string& name, int id, const std::string& title, double annualSalary)
+    : Employee(name, id, title), annualSalary(annualSalary) {}
 
 double SalariedEmployee::calculatePay() const {
     // Assuming monthly salary, divide annual salary by 12
@@ -10,6 +10,6 @@ double SalariedEmployee::calculatePay() const {
 }
 
 void SalariedEmployee::displayInfo() const {
-    Employee::displayInfo();
+    Employee::displayInfo(); // Call base class displayInfo() to print name, ID, and title
     std::cout << "Annual Salary: $" << annualSalary << std::endl;
 }

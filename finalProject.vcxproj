@@ -128,14 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Employee.h" />
-    <ClInclude Include="FileHandler.h" />
     <ClInclude Include="HourlyEmployee.h" />
     <ClInclude Include="SalariedEmployee.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Driver.cpp" />
     <ClCompile Include="Employee.cpp" />
-    <ClCompile Include="FileHandler.cpp" />
     <ClCompile Include="HourlyEmployee.cpp" />
     <ClCompile Include="SalariedEmployee.cpp" />
   </ItemGroup>
